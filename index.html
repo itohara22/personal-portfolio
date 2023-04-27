@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <title>Shubham's Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">S_.</a>
+        <button class="nav_btn"></button>
+        <nav>
+            <ul id="primary_nav" class="nav_bar" data-visible="false">
+                <li><a href="#about-me"><span>About me</span></a></li>
+                <li><a href="#my_projects"><span>Projects</span></a></a></li>
+                <li><a href="#contact_me"><span>Contact me</span></a></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="about_container">
+            <p>Hello, my name is</p>
+            <h1>Shubham.</h1>
+            <p>I build things for Web.</p>
+            <a href="#"><button class="cv_btn">Download CV</button></a>
+        </div>
+    </div>
+    <div class="about_me" id="about-me">
+        <h2>About me</h2>
+        <div class="about_me_desc">
+            <p>I'm a Front-End Developer with a passion for creating intuitive and dynamic user experiences. Interested
+                in the entire frontend spectrum and working on ambitious projects with positive people.</p>
+            <p>Here are a few technologies I've been working with recently :</p>
+            <div class="skill_tab ">
+                <img class="hidden" src="./images/html_logo.png" alt="">
+                <img class="hidden" src="./images/css_logo.png" alt="">
+                <img class="hidden" src="./images/js_logo.png" alt="">
+                <img class="hidden" src="./images/react_logo.png" alt="">
+                <img class="hidden" src="./images/py_logo.png" alt="">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="projects" id="my_projects">
+        <h2>Projects</h2>
+        <div class="pro_container">
+            <div class="project">
+                <div class="pro_1_img"></div>
+                <div class="pro_1_desc">
+                    <h3>AI Article summarizer:</h3>
+                    <p>A react webapp which summarize online article using AI api.</p>
+                    <p>Technologies used :</p>
+                    <p>React, Redux, RapidAPI</p>
+                    <a href=""><button class="pro_btn">Link</button></a>
+                </div>
+            </div>
+            <div class="project">
+                <div class="pro_2_img"></div>
+                <div class="pro_2_desc">
+                    <h3>Personal Portfolio:</h3>
+                    <p>My personal portfolio website.</p>
+                    <p>Technologies used :</p>
+                    <p>html, css, javascript</p>
+                    <button class="pro_btn">Link</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact_me">
+        <h2>Contact me</h2>
+        <div id="contact_me_container">
+            <form action="https://formspree.io/f/xgeqqjpp" method="POST" id="my-form">
+                <div class="form_name">
+                    <input class="form_field" type="text" name="senders_name" id="name" placeholder="name" required>
+                    <label class="form_label" for="senders_name">Name</label>
+                </div>
+                <div class="form_email">
+                    <input class="form_field" type="email" name="e_mail" id="e_mail" placeholder="mail" required>
+                    <label class="form_label" for="e_mail">E-mail</label>
+                </div>
+                <div class="form_text">
+                    <textarea class="form_field" name="message" id="message" placeholder="Your message " rows="4"
+                        required></textarea>
+                    <label class="form_label" for="message">Your Message</label>
+                </div>
+                <button>Send</button>
+            </form>
+            <div id="status"></div>
+
+        </div>
+        <footer>
+            <a href="https://www.linkedin.com/in/shubham-ghogle-25743a258/" target="_blank"><img
+                    src="/images/logo-linkedin.png" alt=""></a>
+            <a href="" target="_blank"><img src="/images/logo-git.png" alt=""></a>
+        </footer>
+    </div>
+</body>
+
+</html>
