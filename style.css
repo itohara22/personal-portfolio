@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Mono:wght@700&display=swap');
 
 :root {
     --bg-color: #13242A;
@@ -11,6 +12,7 @@
     --white: white;
     --pri-font: 'Montserrat', sans-serif;
     --sec-font: 'Roboto', sans-serif;
+    --hero-font: 'Rubik Mono One', sans-serif;
 }
 
 * {
@@ -132,8 +134,8 @@ header li a:hover {
 
 .about_container h1 {
     margin: 1rem 0;
-    font-family: monospace, 'sans-serif';
-    font-size: clamp(3.5rem, 15vw, 12rem);
+    font-family: var(--hero-font);
+    font-size: clamp(3.5rem, 13vw, 11rem);
     color: var(--yellow);
     transition-delay: 200ms;
 }
@@ -373,7 +375,8 @@ form button {
     transition: all 200ms ease-out;
 }
 
-form button:hover {
+form button:hover,
+form button:focus {
     color: var(--yellow);
     border-color: var(--yellow);
     transform: translateY(-3px);
