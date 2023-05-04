@@ -135,7 +135,7 @@ header li a:hover {
 .about_container h1 {
     margin: 1rem 0;
     font-family: var(--hero-font);
-    font-size: clamp(3.5rem, 13vw, 11rem);
+    font-size: clamp(3.3rem, 13vw, 11rem);
     color: var(--yellow);
     transition-delay: 200ms;
 }
@@ -429,17 +429,17 @@ footer {
     gap: 3rem;
 }
 
-@media (width < 560px) {
+@media (max-width:560px) {
 
     .nav_btn {
         display: block;
         position: absolute;
-        top: 1rem;
+        top: 1.5rem;
         right: 2rem;
         z-index: 9999;
         aspect-ratio: 1;
-        width: 1.5rem;
-        background: center/contain no-repeat url(images/hamburger.png);
+        width: 1.8rem;
+        background: center/contain no-repeat url(./images/hamburger.png);
         border: none;
 
     }
@@ -465,6 +465,9 @@ footer {
         transform: translateX(0%);
     }
 
+    .hero{
+        padding: 0.5rem;
+    }
     .about_me {
         gap: 2rem;
     }
